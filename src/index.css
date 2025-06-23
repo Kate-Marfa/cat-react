@@ -1,1 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
 
+.Gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.Gallery h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #444;
+}
+
+.Link {
+  margin: 10px;
+  padding: 12px 18px;
+  background-color: #ffe0b2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Link:hover {
+  background-color: #ffcc80;
+}
+
+.PopUp{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.PopUp img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+.PopUp > div:first-child {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.PopUp > div:first-child:hover {
+  color: #ff4444;
+}
